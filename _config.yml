@@ -1,8 +1,8 @@
 # Site settings
 title: "Uncopyrighted"
 description: "The quick brown fox jumps over a lazy dog"
-baseurl: ""
-url: "http://alixedi.github.io"
+baseurl: "/Jekyll"
+url: "http://chengyuanheng.github.io/Jekyll"
 
 # Build settings
 markdown: kramdown

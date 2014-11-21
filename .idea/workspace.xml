@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c86973-3ef9-400f-b444-d25be6201075" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-Install_ChromeDriver_in_Linux_Mint.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-build_ruby_gem.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-create_network_for_phone_in_windows.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-custom_devise_layout.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-gengerate-task-in-ruby-on-rails.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-google_and_facebook_dns.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-google_dns_visit.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-install_django_for_windows.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-linux_change_source.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-lost-mysqlclient.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-reinstall_mysql_in_linux.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-set_alias.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-21-what_do_rake_spec_do.markdown" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ecdbf1036b1cb9950b5a3e704061d9f263b0888f/_base.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ecdbf1036b1cb9950b5a3e704061d9f263b0888f/_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/ecdbf1036b1cb9950b5a3e704061d9f263b0888f/_syntax-highlighting.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/css/pygments.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/screenshot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/05/25/welcome-to-jekyll/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/screenshot.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/joker.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/joker.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Jekyll.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,16 +54,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-11-21-gengerate-task-in-ruby-on-rails.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-11-21-gengerate-task-in-ruby-on-rails.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64" vertical-offset="85" max-vertical-offset="943">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="2014-11-21-create_network_for_phone_in_windows.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-11-21-create_network_for_phone_in_windows.markdown">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-11-21-what_do_rake_spec_do.markdown" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-11-21-what_do_rake_spec_do.markdown" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-11-21-what_do_rake_spec_do.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67016315" vertical-offset="0" max-vertical-offset="897">
+            <state vertical-scroll-proportion="-23.0" vertical-offset="0" max-vertical-offset="897">
               <caret line="25" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07607497" vertical-offset="0" max-vertical-offset="907">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -175,7 +146,6 @@
         <option value="$PROJECT_DIR$/_site/feed.xml" />
         <option value="$PROJECT_DIR$/_site/about/index.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-24-welcome-to-jekyll.markdown" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_posts/2014-11-21-this-is-a-test.markdown" />
         <option value="$PROJECT_DIR$/_posts/2014-11-21-build_ruby_gem.markdown" />
@@ -191,6 +161,7 @@
         <option value="$PROJECT_DIR$/_posts/2014-11-21-create_network_for_phone_in_windows.markdown" />
         <option value="$PROJECT_DIR$/_posts/2014-11-21-lost-mysqlclient.markdown" />
         <option value="$PROJECT_DIR$/_posts/2014-11-21-what_do_rake_spec_do.markdown" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -699,14 +670,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5862069" vertical-offset="0" max-vertical-offset="644">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/pygments.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
@@ -829,8 +792,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-11-21-what_do_rake_spec_do.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67016315" vertical-offset="0" max-vertical-offset="897">
+        <state vertical-scroll-proportion="-23.0" vertical-offset="0" max-vertical-offset="897">
           <caret line="25" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07607497" vertical-offset="0" max-vertical-offset="907">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
