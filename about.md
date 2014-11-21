@@ -1,11 +1,19 @@
 ---
 layout: page
-title: About
+title: About Author
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Author name is Yuanheng Cheng. As a ruby engineer, he is working for xiaomaguohe company now.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+## About Blog ##
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+The blog record some about ruby on rails 、 javascript 、 git 、 linux and other aspects skills , aims at exchange of learning experiences and common progress
+
+## About website##
+
+The nature of this website is a personal blog, his domain name is [http://www.irails.cn](http://www.irails.cn) I hope everyone could come visit ongoing
+
+## About Contact##
+
+The easiest way to contact me about any computer problems or issues is via email. I prefer to use one email address , so you can contact me via 237178842@qq.com . If you have any other inquires, questions, comments, ideas, etc, feel free to contact me and I will do my best to respond .
