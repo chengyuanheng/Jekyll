@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to cckkll blog!"
 date:   2014-11-18 11:00:54
 categories: jekyll update
 ---

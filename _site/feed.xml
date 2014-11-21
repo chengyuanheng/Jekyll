@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>cckkll Blog</title>
+    <description>The easiest way to contact me about any computer problems or issues is via email. I prefer to use one email address , so you can contact me via 237178842@qq.com . If you have any other inquires, questions, comments, ideas, etc, feel free to contact me and I will do my best to respond .
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Nov 2014 10:04:12 +0800</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 10:04:12 +0800</lastBuildDate>
+    <link>https://github.com/chengyuanheng /</link>
+    <atom:link href="https://github.com/chengyuanheng /feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 21 Nov 2014 10:16:47 +0800</pubDate>
+    <lastBuildDate>Fri, 21 Nov 2014 10:16:47 +0800</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
+        <title>Welcome to cckkll blog!</title>
         <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Tue, 18 Nov 2014 19:00:54 +0800</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2014/11/18/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2014/11/18/welcome-to-jekyll.html</guid>
+        <link>https://github.com/chengyuanheng /jekyll/update/2014/11/18/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://github.com/chengyuanheng /jekyll/update/2014/11/18/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
