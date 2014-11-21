@@ -1,6 +1,6 @@
-typewriter
+Jekyll
 ==========
 
-A simple and beautiful theme for Jekyll.
+[browse the web site](http://chengyuanheng.github.io/Jekyll)
 
-![Screenshot](https://raw.githubusercontent.com/alixedi/typewriter/master/images/screenshot.png)
+![Screenshot](http://chengyuanheng.github.io/Jekyll/images/bg.png)

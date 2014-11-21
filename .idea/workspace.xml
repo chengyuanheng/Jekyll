@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1c86973-3ef9-400f-b444-d25be6201075" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/Install_ChromeDriver_in_Linux_Mint/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/Install_ChromeDriver_in_Linux_Mint/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/build_ruby_gem/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/build_ruby_gem/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/create_network_for_phone_in_windows/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/create_network_for_phone_in_windows/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/custom_devise_layout/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/custom_devise_layout/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/gengerate-task-in-ruby-on-rails/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/gengerate-task-in-ruby-on-rails/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/google_and_facebook_dns/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/google_and_facebook_dns/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/google_dns_visit/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/google_dns_visit/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/install_django_for_windows/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/install_django_for_windows/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/linux_change_source/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/linux_change_source/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/lost-mysqlclient/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/lost-mysqlclient/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/reinstall_mysql_in_linux/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/reinstall_mysql_in_linux/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/set_alias/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/set_alias/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/what_do_rake_spec_do/index.html" afterPath="$PROJECT_DIR$/_site/jekyll/update/2014/11/21/what_do_rake_spec_do/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/page2/index.html" afterPath="$PROJECT_DIR$/_site/page2/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/page3/index.html" afterPath="$PROJECT_DIR$/_site/page3/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/page4/index.html" afterPath="$PROJECT_DIR$/_site/page4/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/page5/index.html" afterPath="$PROJECT_DIR$/_site/page5/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/README.md" afterPath="$PROJECT_DIR$/_site/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Jekyll.iws" />
@@ -44,23 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.71875" vertical-offset="23" max-vertical-offset="1035">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.12693156" vertical-offset="0" max-vertical-offset="906">
+              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="276">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="bg.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/bg.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -129,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="footer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.025583982" vertical-offset="0" max-vertical-offset="899">
+            <state vertical-scroll-proportion="-0.71875" vertical-offset="0" max-vertical-offset="207">
               <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
               <folding />
             </state>
@@ -188,6 +167,7 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -236,6 +216,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Jekyll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jekyll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jekyll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -652,11 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/pygments.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
@@ -787,14 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -850,8 +831,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025583982" vertical-offset="0" max-vertical-offset="899">
+        <state vertical-scroll-proportion="-0.71875" vertical-offset="0" max-vertical-offset="207">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12693156" vertical-offset="0" max-vertical-offset="906">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
           <folding />
         </state>
       </provider>
