@@ -5,6 +5,8 @@ date:   2014-11-21 12:20:04
 categories: jekyll update
 ---
 
+### spec是ruby的dsl,为ruby on rails框架提供单元测试功能,但是spec在运行过程中都做了哪些事情呢?下面我们来一起看一下: ###
+
 when run rake spec --trace, you can see something like this:
 
 {% highlight ruby %}

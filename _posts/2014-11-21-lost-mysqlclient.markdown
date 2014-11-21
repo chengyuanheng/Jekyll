@@ -5,6 +5,9 @@ date:   2014-11-21 12:09:02
 categories: jekyll update
 ---
 
+### 安装rials的时候总会遇到这样的问题,就是mysqlclient丢失,就像下面一样: ###
+
+
 ### look at the tip: ###
 
 {% highlight ruby %}

@@ -5,6 +5,8 @@ date:   2014-11-21 11:46:41
 categories: jekyll update
 ---
 
+### linux下重装mysql: ###
+
 - 删除 mysql
 
     sudo apt-get autoremove --purge mysql-server-5.0
