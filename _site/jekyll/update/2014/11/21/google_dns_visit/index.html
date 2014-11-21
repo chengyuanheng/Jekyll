@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome to Jekyll!</title>
+    <title>google “DNS污染系统”攻击后无法访问google解决方法</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The quick brown fox jumps over a lazy dog">
-    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/05/25/welcome-to-jekyll/">
+    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/11/21/google_dns_visit/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -56,25 +56,47 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>Welcome to Jekyll!</h1>
+    <h1>google “DNS污染系统”攻击后无法访问google解决方法</h1>
   </header>
 
-  <p class="meta">May 25, 2014</p>
+  <p class="meta">Nov 21, 2014</p>
 
   <article class="post-content">
-  <p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+  <p>1.下面的这些ip可以直接复制到浏览器上访问，但是只能使用google的搜索功能。</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>64.233.167.165</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+<p>64.233.167.164</p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
+<p>64.233.167.163</p>
 
+<p>64.233.167.166</p>
+
+<p>173.194.72.31</p>
+
+<p>91.213.30.150</p>
+
+<p>2.这些dns在hosts文件里面改了之后也很卡，可以正常访问google的地图、邮件、登录等</p>
+
+<p>173.194.72.31 www.google.com.hk</p>
+
+<p>173.194.72.31 accounts.google.com</p>
+
+<p>173.194.72.31 plus.google.com</p>
+
+<p>173.194.72.31 mail.google.com</p>
+
+<p>173.194.72.31 maps.google.com</p>
+
+<p>173.194.72.31 play.google.com</p>
+
+<p>3.使用代理搜索网站</p>
+
+<p>http://www.opengg.cn/</p>
+
+<p>http://www.gfsoso.com/</p>
+
+<p>这两个网站都可以代替google，搜索结果和google是一样的</p>
 
   </article>
 

@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "how to set alias and cancel alias in linux ?"
+date:   2014-11-21 11:44:24
+categories: jekyll update
+---
+
+## SET: ##
+
+1. run:  sudo vi ./.bashrc
+
+2. set:  alias s_yes='yes'
+
+            alias s_banner='banner'
+
+            alias s_ddate='ddate'
+
+            alias s_fortune='fortune'
+
+            alias s_fortune_zh='fortune-zh'
+
+            alias s_cal='cal 9 1752'
+
+            alias s_xev='xev'
+
+            alias s_xeyes='xeyes'
+
+            alias s_cowsay='fortune | cowsay'
+
+            alias s_cowthink='fottune | cowthink'
+
+            alias s_factor='factor 999'
+
+            alias s_g_moo='apt-get moo'
+
+            alias s_b_moo='apt-build moo'
+
+            alias s_sl='sl'
+
+            alias s_logo='linuxlogo'
+
+            alias s_oneko='oneko'
+
+            alias s_who='who is i
+
+3. run:  source ~/.bashrc
+
+## CANCEL: ##
+
+1. run:  sudo vi ./.bashrc
+
+2. set:  unalias s_yes
+
+            unalias s_banner
+
+            ...............
+
+3. run:   source ~/.bashrc

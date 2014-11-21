@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome to Jekyll!</title>
+    <title>win7下给手机建立共享网络</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The quick brown fox jumps over a lazy dog">
-    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/05/25/welcome-to-jekyll/">
+    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/11/21/create_network_for_phone_in_windows/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -56,25 +56,29 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>Welcome to Jekyll!</h1>
+    <h1>win7下给手机建立共享网络</h1>
   </header>
 
-  <p class="meta">May 25, 2014</p>
+  <p class="meta">Nov 21, 2014</p>
 
   <article class="post-content">
-  <p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
-
+  <ul>
+  <li>
+    <p>以管理员身份运行cmd（只要保证有权限即可，不知道cmd是什么的童鞋，请直接跳到第五步。）</p>
+  </li>
+  <li>
+    <p>在cmd中输入下面的命令：netsh wlan set hostednetwork mode=allow ssid=cc  key=123456 （其中ssid为建立的网络名称 key为密码）</p>
+  </li>
+  <li>
+    <p>打开网络共享中心 更改适配器 有一个“无线网络连接2”的网络连接，这是win7自带的虚拟WIFI网卡 我们要做的就是把正在连接着的网络共享给“无线网络连接2” 方法就是右键共享之类的了，图就不上了，表在心里骂作者好不啦。。。。</p>
+  </li>
+  <li>
+    <p>在cmd中输入：netsh wlan start hostednetwork  这句话是要启动承载网络，然后你的手机就可以搜到这个名叫cc的网络了，输入密码就可以连接上网了。</p>
+  </li>
+  <li>
+    <p>如果没有成功，请各位再去找其他的教程吧。毕竟电脑与电脑不一样，手机与手机也不一样额。博主的手机小米2s是可以了，博主很高兴。</p>
+  </li>
+</ul>
 
   </article>
 

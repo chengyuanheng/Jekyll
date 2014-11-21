@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>how to build a ruby gem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The quick brown fox jumps over a lazy dog">
+    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/11/21/build_ruby_gem/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+</head>
+
+
+    <body>
+
+      <div class="container">
+
+        <div class="header">
+    <h1>
+        <a style="color: #000;" href="/">Uncopyrighted</a>
+    </h1>
+    <p class="sub">
+        The quick brown fox jumps over a lazy dog
+    </p>
+
+    <div class="menu">
+        <ul class="navlist">
+            
+            <li>
+                <a class="page-link" href="/about">about</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="http://twitter.com/alixedi">twt</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="http://github.com/chengyuanheng">github</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="/feed.xml">rss</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+        <div class="post">
+
+  <header class="post-header">
+    <h1>how to build a ruby gem</h1>
+  </header>
+
+  <p class="meta">Nov 21, 2014</p>
+
+  <article class="post-content">
+  <ul>
+  <li>
+    <p>first you will create a user in rubygem.org (https://rubygems.org/)</p>
+  </li>
+  <li>
+    <p>create the directory structure like this:</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">tree</span> <span class="o">.</span>
+    <span class="err">├──</span> <span class="n">cc_hola</span><span class="o">.</span><span class="n">gemspec</span>
+    <span class="err">└──</span> <span class="n">lib</span>
+        <span class="err">└──</span> <span class="n">cc_hola</span><span class="o">.</span><span class="n">rb</span></code></pre></div>
+
+<p>you can use any name but you must keep consistency</p>
+
+<ul>
+  <li>in your .gemspec file</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Gem</span><span class="o">::</span><span class="no">Specification</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="n">s</span><span class="o">|</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">name</span>        <span class="o">=</span> <span class="s1">&#39;CcHola&#39;</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">version</span>     <span class="o">=</span> <span class="s1">&#39;0.0.0&#39;</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">date</span>        <span class="o">=</span> <span class="s1">&#39;2014-10-20&#39;</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">summary</span>     <span class="o">=</span> <span class="s2">&quot;A ruby gem build test!&quot;</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;A ruby gem build test!&quot;</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">authors</span>     <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;cckkll&quot;</span><span class="o">]</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">email</span>       <span class="o">=</span> <span class="s1">&#39;237178842@qq.com&#39;</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">files</span>       <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;lib/cc_hola.rb&quot;</span><span class="o">]</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">homepage</span>    <span class="o">=</span> <span class="s1">&#39;https://github.com/chengyuanheng&#39;</span>
+<span class="k">end</span></code></pre></div>
+
+<ul>
+  <li>in your .rb file</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">CcHola</span>
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">hi</span>
+    <span class="nb">puts</span> <span class="s2">&quot;Hello World!&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<ul>
+  <li>compiled gem</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">gem</span> <span class="n">build</span> <span class="n">cc_hola</span><span class="o">.</span><span class="n">gemspec</span>
+    <span class="no">Successfully</span> <span class="n">built</span> <span class="no">RubyGem</span>
+    <span class="ss">Name</span><span class="p">:</span> <span class="no">CcHola</span>
+    <span class="ss">Version</span><span class="p">:</span> <span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span>
+    <span class="ss">File</span><span class="p">:</span> <span class="no">CcHola</span><span class="o">-</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="n">gem</span>
+
+<span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">ccHola</span><span class="o">-</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="n">gem</span>
+    <span class="no">Successfully</span> <span class="n">installed</span> <span class="no">CcHola</span><span class="o">-</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span>
+    <span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span><span class="mi">1</span> <span class="n">gem</span> <span class="n">installed</span><span class="o">&lt;</span><span class="sr">/span&gt;</span></code></pre></div>
+
+<ul>
+  <li>test your gem</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">irb</span>
+    <span class="o">&gt;</span> <span class="nb">require</span> <span class="s2">&quot;cc_hola&quot;</span>
+    <span class="o">=&gt;</span> <span class="kp">true</span>
+    <span class="o">&gt;</span> <span class="no">CcHola</span><span class="o">.</span><span class="n">hi</span>
+    <span class="no">Hello</span> <span class="no">World</span><span class="o">!</span>
+    <span class="o">=&gt;</span> <span class="kp">nil</span></code></pre></div>
+
+<ul>
+  <li>release your gem</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">curl</span> <span class="o">-</span><span class="n">u</span> <span class="n">cckkll</span> <span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">rubygems</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">api_key</span><span class="o">.</span><span class="n">yaml</span> <span class="o">&gt;~</span><span class="sr">/.gem/</span><span class="n">credentials</span>
+    <span class="no">Enter</span> <span class="n">host</span> <span class="n">password</span> <span class="k">for</span> <span class="n">user</span> <span class="s1">&#39;cckkll&#39;</span><span class="p">:</span>
+
+<span class="err">$</span> <span class="n">gem</span> <span class="n">push</span> <span class="no">CcHola</span><span class="o">-</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="n">gem</span>
+    <span class="no">Pushing</span> <span class="n">gem</span> <span class="n">to</span> <span class="ss">https</span><span class="p">:</span><span class="sr">//</span><span class="n">rubygems</span><span class="o">.</span><span class="n">org</span><span class="o">.</span><span class="n">.</span><span class="o">.</span>
+    <span class="no">Successfully</span> <span class="n">registered</span> <span class="ss">gem</span><span class="p">:</span> <span class="no">CcHola</span> <span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="p">)</span></code></pre></div>
+
+<ul>
+  <li>you will find it in your rubygems account and all people can use it by</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="s1">&#39;CcHola&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 0.0.0&#39;</span></code></pre></div>
+
+  </article>
+
+</div>
+
+
+        <footer class="site-footer">
+<a href="https://github.com/alixedi/typewriter">Typewriter</a> by <a href="http://twitter.com/alixedi">alixedi</a>
+</footer>
+
+
+      </div>
+
+    </body>
+</html>

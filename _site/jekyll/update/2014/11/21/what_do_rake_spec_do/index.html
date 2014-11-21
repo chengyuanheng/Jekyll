@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>what do rake spec do</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The quick brown fox jumps over a lazy dog">
+    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/11/21/what_do_rake_spec_do/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+</head>
+
+
+    <body>
+
+      <div class="container">
+
+        <div class="header">
+    <h1>
+        <a style="color: #000;" href="/">Uncopyrighted</a>
+    </h1>
+    <p class="sub">
+        The quick brown fox jumps over a lazy dog
+    </p>
+
+    <div class="menu">
+        <ul class="navlist">
+            
+            <li>
+                <a class="page-link" href="/about">about</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="http://twitter.com/alixedi">twt</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="http://github.com/chengyuanheng">github</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="/feed.xml">rss</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+        <div class="post">
+
+  <header class="post-header">
+    <h1>what do rake spec do</h1>
+  </header>
+
+  <p class="meta">Nov 21, 2014</p>
+
+  <article class="post-content">
+  <p>when run rake spec –trace, you can see something like this:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">**</span> <span class="no">Invoke</span> <span class="n">spec</span> <span class="p">(</span><span class="n">first_time</span><span class="p">)</span>
+<span class="o">**</span> <span class="no">Invoke</span> <span class="ss">db</span><span class="p">:</span><span class="nb">test</span><span class="ss">:prepare</span> <span class="p">(</span><span class="n">first_time</span><span class="p">)</span>
+<span class="o">**</span> <span class="no">Invoke</span> <span class="ss">db</span><span class="p">:</span><span class="n">abort_if_pending_migrations</span> <span class="p">(</span><span class="n">first_time</span><span class="p">)</span>
+<span class="o">**</span> <span class="no">Invoke</span> <span class="n">environment</span> <span class="p">(</span><span class="n">first_time</span><span class="p">)</span>
+<span class="o">**</span> <span class="no">Execute</span> <span class="n">environment</span>
+<span class="o">**</span> <span class="no">Execute</span> <span class="ss">db</span><span class="p">:</span><span class="n">abort_if_pending_migrations</span>
+<span class="o">**</span> <span class="no">Execute</span> <span class="ss">db</span><span class="p">:</span><span class="nb">test</span><span class="ss">:prepare</span>
+<span class="o">**</span> <span class="no">Invoke</span> <span class="ss">db</span><span class="p">:</span><span class="nb">test</span><span class="ss">:load</span> <span class="p">(</span><span class="n">first_time</span><span class="p">)</span>
+<span class="o">**</span> <span class="no">Invoke</span> <span class="ss">db</span><span class="p">:</span><span class="nb">test</span><span class="ss">:purge</span> <span class="p">(</span><span class="n">first_time</span><span class="p">)</span>
+<span class="o">**</span> <span class="no">Invoke</span> <span class="n">environment</span>
+<span class="o">**</span> <span class="no">Execute</span> <span class="ss">db</span><span class="p">:</span><span class="nb">test</span><span class="ss">:purge</span>
+<span class="o">**</span> <span class="no">Execute</span> <span class="ss">db</span><span class="p">:</span><span class="nb">test</span><span class="ss">:load</span>
+<span class="o">**</span> <span class="no">Invoke</span> <span class="ss">db</span><span class="p">:</span><span class="ss">schema</span><span class="p">:</span><span class="nb">load</span> <span class="p">(</span><span class="n">first_time</span><span class="p">)</span>
+<span class="o">**</span> <span class="no">Invoke</span> <span class="n">environment</span>
+<span class="o">**</span> <span class="no">Execute</span> <span class="ss">db</span><span class="p">:</span><span class="ss">schema</span><span class="p">:</span><span class="nb">load</span>
+<span class="o">**</span> <span class="no">Execute</span> <span class="n">spec</span></code></pre></div>
+
+<ul>
+  <li>
+    <p>Don’t run the specs if there are pending migrations in the development database. (db:abort_if_pending_migrations)</p>
+  </li>
+  <li>
+    <p>Drop the test database (db:test:purge)</p>
+  </li>
+  <li>
+    <p>Load the schema into the test database (db:schema:load in environment “test”)</p>
+  </li>
+</ul>
+
+  </article>
+
+</div>
+
+
+        <footer class="site-footer">
+<a href="https://github.com/alixedi/typewriter">Typewriter</a> by <a href="http://twitter.com/alixedi">alixedi</a>
+</footer>
+
+
+      </div>
+
+    </body>
+</html>

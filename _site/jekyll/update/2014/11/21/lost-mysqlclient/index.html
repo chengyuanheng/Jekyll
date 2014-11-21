@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>solve the problem about can not find mysqlclient</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The quick brown fox jumps over a lazy dog">
+    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/11/21/lost-mysqlclient/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+</head>
+
+
+    <body>
+
+      <div class="container">
+
+        <div class="header">
+    <h1>
+        <a style="color: #000;" href="/">Uncopyrighted</a>
+    </h1>
+    <p class="sub">
+        The quick brown fox jumps over a lazy dog
+    </p>
+
+    <div class="menu">
+        <ul class="navlist">
+            
+            <li>
+                <a class="page-link" href="/about">about</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="http://twitter.com/alixedi">twt</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="http://github.com/chengyuanheng">github</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="/feed.xml">rss</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+        <div class="post">
+
+  <header class="post-header">
+    <h1>solve the problem about can not find mysqlclient</h1>
+  </header>
+
+  <p class="meta">Nov 21, 2014</p>
+
+  <article class="post-content">
+  <h3 id="look-at-the-tip">look at the tip:</h3>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Gem</span><span class="o">::</span><span class="no">Installer</span><span class="o">::</span><span class="ss">ExtensionBuildError</span><span class="p">:</span> <span class="ss">ERROR</span><span class="p">:</span> <span class="no">Failed</span> <span class="n">to</span> <span class="n">build</span> <span class="n">gem</span> <span class="n">native</span> <span class="n">extension</span><span class="o">.</span>
+
+<span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">rubies</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="n">p547</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">ruby</span> <span class="n">extconf</span><span class="o">.</span><span class="n">rb</span>
+
+<span class="n">extconf</span><span class="o">.</span><span class="n">rb</span><span class="p">:</span><span class="mi">12</span><span class="p">:</span> <span class="ss">warning</span><span class="p">:</span> <span class="no">Insecure</span> <span class="n">world</span> <span class="n">writable</span> <span class="n">dir</span> <span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">gems</span> <span class="k">in</span> <span class="no">PATH</span><span class="p">,</span> <span class="n">mode</span> <span class="mo">042777</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">mysql_query</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lmysqlclient</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">no</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">main</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lm</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">yes</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">mysql_query</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lmysqlclient</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">no</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">main</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lz</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">yes</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">mysql_query</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lmysqlclient</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">no</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">main</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lsocket</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">no</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">mysql_query</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lmysqlclient</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">no</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">main</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lnsl</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">yes</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">mysql_query</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lmysqlclient</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">no</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">main</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lmygcc</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">no</span>
+
+<span class="n">checking</span> <span class="k">for</span> <span class="n">mysql_query</span><span class="p">()</span> <span class="k">in</span> <span class="o">-</span><span class="n">lmysqlclient</span><span class="o">.</span><span class="n">.</span><span class="o">.</span> <span class="n">no</span>
+
+<span class="o">***</span> <span class="n">extconf</span><span class="o">.</span><span class="n">rb</span> <span class="n">failed</span> <span class="o">***</span>
+
+<span class="no">Could</span> <span class="ow">not</span> <span class="n">create</span> <span class="no">Makefile</span> <span class="n">due</span> <span class="n">to</span> <span class="n">some</span> <span class="n">reason</span><span class="p">,</span> <span class="n">probably</span> <span class="n">lack</span> <span class="n">of</span>
+
+<span class="n">necessary</span> <span class="n">libraries</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">headers</span><span class="o">.</span>  <span class="no">Check</span> <span class="n">the</span> <span class="n">mkmf</span><span class="o">.</span><span class="n">log</span> <span class="n">file</span> <span class="k">for</span> <span class="n">more</span>
+
+<span class="n">details</span><span class="o">.</span>  <span class="no">You</span> <span class="n">may</span> <span class="n">need</span> <span class="n">configuration</span> <span class="n">options</span><span class="o">.</span>
+
+<span class="no">Provided</span> <span class="n">configuration</span> <span class="ss">options</span><span class="p">:</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">opt</span><span class="o">-</span><span class="n">dir</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">opt</span><span class="o">-</span><span class="n">dir</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">opt</span><span class="o">-</span><span class="kp">include</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">opt</span><span class="o">-</span><span class="kp">include</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">opt</span><span class="o">-</span><span class="n">dir</span><span class="p">}</span><span class="o">/</span><span class="kp">include</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">opt</span><span class="o">-</span><span class="n">lib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">opt</span><span class="o">-</span><span class="n">lib</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">opt</span><span class="o">-</span><span class="n">dir</span><span class="p">}</span><span class="o">/</span><span class="n">lib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">make</span><span class="o">-</span><span class="n">prog</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">make</span><span class="o">-</span><span class="n">prog</span>
+
+<span class="o">--</span><span class="n">srcdir</span><span class="o">=.</span>
+
+<span class="o">--</span><span class="n">curdir</span>
+
+<span class="o">--</span><span class="n">ruby</span><span class="o">=</span><span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">rubies</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="n">p547</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">ruby</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="n">config</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="n">config</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="n">dir</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="n">dir</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="kp">include</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="kp">include</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">mysql</span><span class="o">-</span><span class="n">dir</span><span class="p">}</span><span class="o">/</span><span class="kp">include</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="n">lib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysql</span><span class="o">-</span><span class="n">lib</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">mysql</span><span class="o">-</span><span class="n">dir</span><span class="p">}</span><span class="o">/</span><span class="n">lib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mlib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">zlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">zlib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">socketlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">socketlib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">nsllib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">nsllib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mygcclib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mygcclib</span>
+
+<span class="o">--</span><span class="n">with</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="o">--</span><span class="n">without</span><span class="o">-</span><span class="n">mysqlclientlib</span>
+
+<span class="no">Gem</span> <span class="n">files</span> <span class="n">will</span> <span class="n">remain</span> <span class="n">installed</span> <span class="k">in</span> <span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="n">p547</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">mysql</span><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">1</span> <span class="k">for</span> <span class="n">inspection</span><span class="o">.</span>
+
+<span class="no">Results</span> <span class="n">logged</span> <span class="n">to</span> <span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="n">p547</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">mysql</span><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">1</span><span class="o">/</span><span class="n">ext</span><span class="o">/</span><span class="n">mysql_api</span><span class="o">/</span><span class="n">gem_make</span><span class="o">.</span><span class="n">out</span></code></pre></div>
+
+<h2 id="solve-the-problem">solve the problem</h2>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">gem</span> <span class="n">uninstall</span> <span class="n">mysql</span>
+
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libmysqlclient</span><span class="o">-</span><span class="n">dev</span> <span class="o">-</span><span class="n">y</span>
+
+<span class="n">sudo</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">mysql</span></code></pre></div>
+
+
+  </article>
+
+</div>
+
+
+        <footer class="site-footer">
+<a href="https://github.com/alixedi/typewriter">Typewriter</a> by <a href="http://twitter.com/alixedi">alixedi</a>
+</footer>
+
+
+      </div>
+
+    </body>
+</html>

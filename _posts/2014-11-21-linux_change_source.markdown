@@ -1,0 +1,1038 @@
+---
+layout: post
+title:  " linux change source"
+date:   2014-11-21 11:50:57
+categories: jekyll update
+---
+
+- Change source before bundle :
+
+    gem source -r http://rubygems.org/     #remove source: http://rubygems.org/
+
+    gem source -a http://ruby.taobao.org  #add source: http://ruby.taobao.org
+
+- Other sources for linux  :
+
+    target file:  /etc/apt/sources.list
+
+- sources list:
+
+    Ubuntu 官方更新服务器（欧洲，此为官方源，国内较慢，但无同步延迟问题，电信、移动/铁通、联通等公网用户可以使用)：
+
+        deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse
+
+        deb http://archive.ubuntu.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://archive.ubuntu.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://archive.ubuntu.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://archive.ubuntu.com/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://archive.ubuntu.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://archive.ubuntu.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://archive.ubuntu.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://archive.ubuntu.com/ubuntu/ raring-backports main restricted universe multiverse
+
+    Ubuntu官方提供的其他软件（第三方闭源软件等）：
+
+        deb http://archive.canonical.com/ubuntu/ raring partner
+
+        deb http://extras.ubuntu.com/ubuntu/ raring main
+
+
+    骨头兄亲自搭建并维护的 Ubuntu 源（该源位于浙江杭州百兆共享宽带的电信机房)，包含 Deepin 等镜像：
+
+        deb http://ubuntu.srt.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://ubuntu.srt.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://ubuntu.srt.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://ubuntu.srt.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://ubuntu.srt.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://ubuntu.srt.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://ubuntu.srt.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://ubuntu.srt.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://ubuntu.srt.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://ubuntu.srt.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+
+    网易163更新服务器（广东广州电信/联通千兆双线接入），包含其他开源镜像：
+
+        deb http://mirrors.163.com/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.163.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.163.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.163.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.163.com/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.163.com/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.163.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.163.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.163.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.163.com/ubuntu/ raring-backports main restricted universe multiverse
+
+
+    搜狐更新服务器（山东联通千兆接入，官方中国大陆地区镜像跳转至此） ，包含其他开源镜像：
+
+        deb http://mirrors.sohu.com/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.sohu.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.sohu.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.sohu.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.sohu.com/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.sohu.com/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.sohu.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.sohu.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.sohu.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.sohu.com/ubuntu/ raring-backports main restricted universe multiverse
+
+
+    阿里云更新服务器（北京万网/浙江杭州阿里云服务器双线接入），包含其他开源镜像：
+
+        deb http://mirrors.aliyun.com/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.aliyun.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.aliyun.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.aliyun.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.aliyun.com/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.aliyun.com/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.aliyun.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.aliyun.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.aliyun.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.aliyun.com/ubuntu/ raring-backports main restricted universe multiverse
+
+
+    开源中国更新服务器（浙江杭州阿里云服务器），包含其他开源镜像：
+
+        deb http://mirrors.oschina.net/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.oschina.net/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.oschina.net/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.oschina.net/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.oschina.net/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.oschina.net/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.oschina.net/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.oschina.net/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.oschina.net/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.oschina.net/ubuntu/ raring-backports main restricted universe multiverse
+
+
+    中国开源软件中心更新服务器（北京光环新网服务器），包含其他开源镜像：
+
+        deb http://mirrors.oss.org.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.oss.org.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.oss.org.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.oss.org.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.oss.org.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.oss.org.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.oss.org.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.oss.org.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.oss.org.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.oss.org.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+
+    LupaWorld 更新服务器（浙江杭州电信/联通双线服务器），包含其他开源镜像：
+
+        deb http://mirror.lupaworld.com/ubuntu raring main restricted universe multiverse
+
+        deb http://mirror.lupaworld.com/ubuntu raring-security main restricted universe multiverse
+
+        deb http://mirror.lupaworld.com/ubuntu raring-updates main restricted universe multiverse
+
+        deb http://mirror.lupaworld.com/ubuntu raring-backports main restricted universe multiverse
+
+        deb http://mirror.lupaworld.com/ubuntu raring-proposed main restricted universe multiverse
+
+        deb-src http://mirror.lupaworld.com/ubuntu raring main restricted universe multiverse
+
+        deb-src http://mirror.lupaworld.com/ubuntu raring-security main restricted universe multiverse
+
+        deb-src http://mirror.lupaworld.com/ubuntu raring-updates main restricted universe multiverse
+
+        deb-src http://mirror.lupaworld.com/ubuntu raring-backports main restricted universe multiverse
+
+        deb-src http://mirror.lupaworld.com/ubuntu raring-proposed main restricted universe multiverse
+
+
+    Linux运维派架设的更新服务器（北京阿里巴巴科技有限公司服务器），包含其他开源镜像：
+
+        deb http://mirrors.skyshe.com/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.skyshe.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.skyshe.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.skyshe.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.skyshe.com/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.skyshe.com/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.skyshe.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.skyshe.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.skyshe.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.skyshe.com/ubuntu/ raring-backports main restricted universe multiverse
+
+
+    北京首都在线科技股份有限公司 更新服务器，包含其他开源镜像：
+
+        deb http://mirrors.yun-idc.com/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.yun-idc.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.yun-idc.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.yun-idc.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.yun-idc.com/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.yun-idc.com/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.yun-idc.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.yun-idc.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.yun-idc.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.yun-idc.com/ubuntu/ raring-backports main restricted universe multiverse
+
+
+
+    常州贝特康姆软件技术有限公司 更新服务器（江苏常州电信服务器），包含其他开源镜像:
+
+        deb http://centos.bitcomm.cn/ubuntu raring main restricted universe multiverse
+
+        deb http://centos.bitcomm.cn/ubuntu raring-security main restricted universe multiverse
+
+        deb http://centos.bitcomm.cn/ubuntu raring-updates main restricted universe multiverse
+
+        deb http://centos.bitcomm.cn/ubuntu raring-backports main restricted universe multiverse
+
+        deb http://centos.bitcomm.cn/ubuntu raring-proposed main restricted universe multiverse
+
+        deb-src http://centos.bitcomm.cn/ubuntu raring main restricted universe multiverse
+
+        deb-src http://centos.bitcomm.cn/ubuntu raring-security main restricted universe multiverse
+
+        deb-src http://centos.bitcomm.cn/ubuntu raring-updates main restricted universe multiverse
+
+        deb-src http://centos.bitcomm.cn/ubuntu raring-backports main restricted universe multiverse
+
+        deb-src http://centos.bitcomm.cn/ubuntu raring-proposed main restricted universe multiverse
+
+以下为有教育网接入的服务器（推荐教育网用户使用，部分非教育网用户也有可观的速度。教育网用户请优先使用IPv6地址。
+
+    中国科学技术大学更新服务器（位于合肥，千兆教育网接入，百兆电信/联通线路智能路由），由中科大 Linux 用户协会和中科大学网络信息中心维护，包含其他开源镜像，Deepin 官方服务器 实际亦指向此处：
+
+        deb http://debian.ustc.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb http://debian.ustc.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://debian.ustc.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://debian.ustc.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://debian.ustc.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://debian.ustc.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://debian.ustc.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://debian.ustc.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://debian.ustc.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://debian.ustc.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+
+    IPv6-Only 地址
+
+        deb http://mirrors6.ustc.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb http://mirrors6.ustc.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://mirrors6.ustc.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://mirrors6.ustc.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://mirrors6.ustc.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+
+
+    清华大学更新服务器，（教育网核心节点百兆接入，已计划提高到千兆）由清华大学学生网管会维护。包含其他开源镜像：
+
+        deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+
+    IPv4-Only 地址
+
+        deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+
+    IPv6-Only 地址
+
+        deb http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://mirrors.6.tuna.tsinghua.edu.cn//ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    中国地质大学开源镜像站，由中国地质大学 Linux 爱好者维护。包含其他开源镜像， (校外限 IPv6 访问)：
+
+        deb http://cugbteam.org/ubuntu/ raring main restricted universe multiverse
+
+        deb http://cugbteam.org/ubuntu/ raring-security main restricted universe multiverse
+
+        debhttp://cugbteam.org/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://cugbteam.org/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://cugbteam.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://cugbteam.org/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://cugbteam.org/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://cugbteam.org/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://cugbteam.org/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://cugbteam.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+    北京交通大学更新服务器（教育网/电信百兆接入），由北京交通大学信息中心赞助，包含其他开源镜像:
+
+        deb http://mirror.bjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb http://mirror.bjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://mirror.bjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://mirror.bjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://mirror.bjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+
+    IPv6-Only 地址
+
+        deb http://mirror6.bjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb http://mirror6.bjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://mirror6.bjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://mirror6.bjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://mirror6.bjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    北京理工大学更新服务器，包含其他开源镜像：
+
+        deb http://mirror.bit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirror.bit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirror.bit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirror.bit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://mirror.bit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirror.bit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirror.bit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirror.bit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirror.bit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirror.bit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    IPv6-Only 地址
+
+        deb http://mirror.bit6.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirror.bit6.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirror.bit6.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirror.bit6.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://mirror.bit6.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirror.bit6.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirror.bit6.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirror.bit6.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirror.bit6.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirror.bit6.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+
+    天津大学更新服务器，由天津大学信息与网络协会和天津大学自由软件联盟维护，包含其他开源镜像:
+
+        deb http://mirror.tju.edu.cn/ubuntu/ oneiric main restricted universe multiverse
+
+        deb http://mirror.tju.edu.cn/ubuntu/ oneiric-security main restricted universe multiverse
+
+        deb http://mirror.tju.edu.cn/ubuntu/ oneiric-updates main restricted universe multiverse
+
+        deb http://mirror.tju.edu.cn/ubuntu/ oneiric-backports main restricted universe multiverse
+
+        deb http://mirror.tju.edu.cn/ubuntu/ oneiric-proposed main restricted universe multiverse
+
+        deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric main restricted universe multiverse
+
+        deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric-security main restricted universe multiverse
+
+        deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric-updates main restricted universe multiverse
+
+        deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric-backports main restricted universe multiverse
+
+        deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric-proposed main restricted universe multiverse
+
+    山东理工大学更新服务器，包含其他开源镜像，限校内访问：
+
+        deb http://mirrors.sdutlinux.org/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.sdutlinux.org/ubuntu/ raring-backports restricted universe multiverse
+
+        deb http://mirrors.sdutlinux.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.sdutlinux.org/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.sdutlinux.org/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.sdutlinux.org/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.sdutlinux.org/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.sdutlinux.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.sdutlinux.org/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.sdutlinux.org/ubuntu/ raring-updates main restricted universe multiverse
+
+    东北大学更新服务器，包含其他开源镜像：
+
+        deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring main multiverse restricted universe
+
+        deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-updates main multiverse restricted universe
+
+    IPv6-Only 地址
+
+        deb http://ftp.neu6.edu.cn/mirrors/ raring main multiverse restricted universe
+
+        deb http://ftp.neu6.edu.cn/mirrors/ raring-backports main multiverse restricted universe
+
+        deb http://ftp.neu6.edu.cn/mirrors/ raring-proposed main multiverse restricted universe
+
+        deb http://ftp.neu6.edu.cn/mirrors/ raring-security main multiverse restricted universe
+
+        deb http://ftp.neu6.edu.cn/mirrors/ raring-updates main multiverse restricted universe
+
+        deb-src http://ftp.neu6.edu.cn/mirrors/ raring main multiverse restricted universe
+
+        deb-src http://ftp.neu6.edu.cn/mirrors/ raring-backports main multiverse restricted universe
+
+        deb-src http://ftp.neu6.edu.cn/mirrors/ raring-proposed main multiverse restricted universe
+
+        deb-src http://ftp.neu6.edu.cn/mirrors/ raring-security main multiverse restricted universe
+
+        deb-src http://ftp.neu6.edu.cn/mirrors/ raring-updates main multiverse restricted universe
+
+    哈尔滨工业大学更新服务器，包含其他开源镜像：
+
+        deb http://run.hit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://run.hit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://run.hit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://run.hit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://run.hit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://run.hit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://run.hit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://run.hit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://run.hit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://run.hit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    IPv6-Only地址
+
+        deb http://run6.hit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://run6.hit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://run6.hit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://run6.hit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://run6.hit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://run6.hit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://run6.hit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://run6.hit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://run6.hit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://run6.hit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    大连理工大学更新服务器，包含其他开源镜像：
+
+        deb http://mirror.dlut.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirror.dlut.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirror.dlut.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirror.dlut.edu.cn/ubuntu/ubuntu raring-backports main restricted universe multiverse
+
+        deb http://mirror.dlut.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirror.dlut.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirror.dlut.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirror.dlut.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirror.dlut.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirror.dlut.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    上海交通大学更新服务器（教育网千兆接入，联通/电信线路情况不详），包含其他开源镜像：
+
+        deb http://ftp.sjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb http://ftp.sjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://ftp.sjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://ftp.sjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://ftp.sjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    IPv6-Only 地址
+
+        deb http://ftp6.sjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb http://ftp6.sjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://ftp6.sjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://ftp6.sjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://ftp6.sjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    江苏开放大学更新服务器，由江苏开放大学技术中心维护，包含其他开源镜像：
+
+        deb http://mirrors.jstvu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.jstvu.edu.cn/ubuntu/ raring-backports restricted universe multiverse
+
+        deb http://mirrors.jstvu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.jstvu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.jstvu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    南京师范大学更新服务器，包含其他开源镜像，限校内访问：
+
+        deb http://mirrors.njnu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.njnu.edu.cn/ubuntu/ raring-backports restricted universe multiverse
+
+        deb http://mirrors.njnu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.njnu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.njnu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    浙江大学更新服务器，由浙江大学Linux用户组维护，包含其他开源镜像：
+
+        deb http://mirrors.zjustu.org/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.zjustu.org/ubuntu/ raring-backports restricted universe multiverse
+
+        deb http://mirrors.zjustu.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.zjustu.org/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.zjustu.org/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.zjustu.org/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.zjustu.org/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.zjustu.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.zjustu.org/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.zjustu.org/ubuntu/ raring-updates main restricted universe multiverse
+
+    华中科技大学更新服务器，由华中科技大学网络与计算中心维护，包含其他开源镜像：
+
+        deb http://mirrors.hust.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.hust.edu.cn/ubuntu/ raring-backports restricted universe multiverse
+
+        deb http://mirrors.hust.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.hust.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.hust.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.hust.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.hust.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.hust.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.hust.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.hust.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    华中科大联创团队更新服务器，由华中科技大学启明学院 的联创团队维护，包含其他开源镜像：
+
+        deb http://mirrors.hustunique.com/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirrors.hustunique.com/ubuntu/ raring-backports restricted universe multiverse
+
+        deb http://mirrors.hustunique.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.hustunique.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.hustunique.com/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.hustunique.com/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.hustunique.com/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.hustunique.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.hustunique.com/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.hustunique.com/ubuntu/ raring-updates main restricted universe multiverse
+
+    厦门大学更新服务器，由厦门大学信息与网络中心维护，包含其他开源镜像：
+
+        deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring main restricted universe multiverse
+
+        deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-backports restricted universe multiverse
+
+        deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-proposed main restricted universe multiverse
+
+        deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-security main restricted universe multiverse
+
+        deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring main restricted universe multiverse
+
+        deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-security main restricted universe multiverse
+
+        deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-updates main restricted universe multiverse
+
+    西南林业大学更新服务器，只包括当前稳定版和开发版，不包括 LTS 镜像。由西南林业大学计信学院维护。包括 Debian 镜像：
+
+        deb http://cs3.swfu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb http://cs3.swfu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb http://cs3.swfu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+        deb http://cs3.swfu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb http://cs3.swfu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+        deb-src http://cs3.swfu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+        deb-src http://cs3.swfu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+        deb-src http://cs3.swfu.edu.cnubuntu/ raring-proposed main multiverse restricted universe
+
+        deb-src http://cs3.swfu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+        deb-src http://cs3.swfu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    电子科技大学（位于成都）更新服务器，由电子科技大学学生宿舍网络管理委员会维护，仅包含 Ubuntu 镜像：
+
+        deb http://ubuntu.dormforce.net/ubuntu/ raring main restricted universe multiverse
+
+        deb http://ubuntu.dormforce.net/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://ubuntu.dormforce.net/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://ubuntu.dormforce.net/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://ubuntu.dormforce.net/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://ubuntu.dormforce.net/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://ubuntu.dormforce.net/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://ubuntu.dormforce.net/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://ubuntu.dormforce.net/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://ubuntu.dormforce.net/ubuntu/ raring-updates main restricted universe multiverse
+
+    电子科技大学另一更新服务器，由电子科大凝聚网络安全工作室维护，包含 Ubuntu 和 Raspian镜像，以及 Linux Deepin镜像：
+
+        deb http://ubuntu.cnssuestc.org/ubuntu/ raring main restricted universe multiverse
+
+        deb http://ubuntu.cnssuestc.org/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb http://ubuntu.cnssuestc.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb http://ubuntu.cnssuestc.org/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://ubuntu.cnssuestc.org/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring-updates main restricted universe multiverse
+
+    兰州大学更新服务器，由兰州大学开源社区维护，包含其他开源镜像：
+
+        deb http://mirror.lzu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://mirror.lzu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://mirror.lzu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://mirror.lzu.edu.cn/ubuntu/ubuntu raring-backports main restricted universe multiverse
+
+        deb http://mirror.lzu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://mirror.lzu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://mirror.lzu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://mirror.lzu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://mirror.lzu.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://mirror.lzu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    西安交通大学更新服务器，由西安交通大学众享社维护，包含其他开源镜像：
+
+        deb http://ubuntu.xjtuns.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb http://ubuntu.xjtuns.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb http://ubuntu.xjtuns.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb http://ubuntu.xjtuns.cn/ubuntu/ubuntu raring-backports main restricted universe multiverse
+
+        deb http://ubuntu.xjtuns.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+        deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring main restricted universe multiverse
+
+        deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring-security main restricted universe multiverse
+
+        deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+        deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+        deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+以下为大陆地区外的源
+
+    香港中文大学更新服务器，由香港中文大学资讯科技服务处维护，包含其他开源镜像：
+
+        deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring main restricted universe multiverse
+
+        deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-security main restricted universe multiverse
+
+        deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-updates main restricted universe multiverse
+
+        deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-backports main restricted universe multiverse
+
+        deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-proposed main restricted universe multiverse
+
+        deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring main restricted universe multiverse
+
+        deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-security main restricted universe multiverse
+
+        deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-updates main restricted universe multiverse
+
+        deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-backports main restricted universe multiverse
+
+        deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-proposed main restricted universe
+
+    香港 01link 更新服务器，由香港联达网络服务有限公司维护：
+
+        deb http://ubuntu.01link.hk raring main restricted universe multiverse
+
+        deb http://ubuntu.01link.hk raring-security main restricted universe multiverse
+
+        deb http://ubuntu.01link.hk raring-updates main restricted universe multiverse
+
+        deb http://ubuntu.01link.hk raring-backports main restricted universe multiverse
+
+        deb http://ubuntu.01link.hk raring-proposed main restricted universe multiverse
+
+        deb-src http://ubuntu.01link.hk raring main restricted universe multiverse
+
+        deb-src http://ubuntu.01link.hk raring-security main restricted universe multiverse
+
+        deb-src http://ubuntu.01link.hk raring-updates main restricted universe multiverse
+
+        deb-src http://ubuntu.01link.hk raring-backports main restricted universe multiverse
+
+        deb-src http://ubuntu.01link.hk raring-proposed main restricted universe
+
+    香港 uhost 更新服务器，由香港互联科技有限公司维护：
+
+        deb http://ubuntu.uhost.hk raring main restricted universe multiverse
+
+        deb http://ubuntu.uhost.hk raring-security main restricted universe multiverse
+
+        deb http://ubuntu.uhost.hk raring-updates main restricted universe multiverse
+
+        deb http://ubuntu.uhost.hk raring-backports main restricted universe multiverse
+
+        deb http://ubuntu.uhost.hk raring-proposed main restricted universe multiverse
+
+        deb-src http://ubuntu.uhost.hk raring main restricted universe multiverse
+
+        deb-src http://ubuntu.uhost.hk raring-security main restricted universe multiverse
+
+        deb-src http://ubuntu.uhost.hk raring-updates main restricted universe multiverse
+
+        deb-src http://ubuntu.uhost.hk raring-backports main restricted universe multiverse
+
+        deb-src http://ubuntu.uhost.hk raring-proposed main restricted universe
+
+    台湾的官方源。速度有时甚至快于内地的，包含 Debian 等其他镜像：
+
+        deb http://tw.archive.ubuntu.com/ubuntu raring main restricted universe multiverse
+
+        deb http://tw.archive.ubuntu.com/ubuntu raring-security main restricted universe multiverse
+
+        deb http://tw.archive.ubuntu.com/ubuntu raring-updates main restricted universe multiverse
+
+        deb http://tw.archive.ubuntu.com/ubuntu raring-backports main restricted universe multiverse
+
+        deb http://tw.archive.ubuntu.com/ubuntu raring-proposed main restricted universe multiverse
+
+        deb-src http://tw.archive.ubuntu.com/ubuntu raring main restricted universe multiverse
+
+        deb-src http://tw.archive.ubuntu.com/ubuntu raring-security main restricted universe multiverse
+
+        deb-src http://tw.archive.ubuntu.com/ubuntu raring-updates main restricted universe multiverse
+
+        deb-src http://tw.archive.ubuntu.com/ubuntu raring-backports main restricted universe multiverse
+
+        deb-src http://tw.archive.ubuntu.com/ubuntu raring-proposed main restricted universe multiverse
+
+其他台湾源可以参考正体中文站Wiki

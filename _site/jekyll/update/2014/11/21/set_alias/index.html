@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome to Jekyll!</title>
+    <title>how to set alias and cancel alias in linux ?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The quick brown fox jumps over a lazy dog">
-    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/05/25/welcome-to-jekyll/">
+    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/11/21/set_alias/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -56,25 +56,77 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>Welcome to Jekyll!</h1>
+    <h1>how to set alias and cancel alias in linux ?</h1>
   </header>
 
-  <p class="meta">May 25, 2014</p>
+  <p class="meta">Nov 21, 2014</p>
 
   <article class="post-content">
-  <p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+  <h2 id="set">SET:</h2>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<ol>
+  <li>
+    <p>run:  sudo vi ./.bashrc</p>
+  </li>
+  <li>
+    <p>set:  alias s_yes=’yes’</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+    <pre><code>     alias s_banner='banner'
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
+     alias s_ddate='ddate'
 
+     alias s_fortune='fortune'
+
+     alias s_fortune_zh='fortune-zh'
+
+     alias s_cal='cal 9 1752'
+
+     alias s_xev='xev'
+
+     alias s_xeyes='xeyes'
+
+     alias s_cowsay='fortune | cowsay'
+
+     alias s_cowthink='fottune | cowthink'
+
+     alias s_factor='factor 999'
+
+     alias s_g_moo='apt-get moo'
+
+     alias s_b_moo='apt-build moo'
+
+     alias s_sl='sl'
+
+     alias s_logo='linuxlogo'
+
+     alias s_oneko='oneko'
+
+     alias s_who='who is i
+</code></pre>
+  </li>
+  <li>
+    <p>run:  source ~/.bashrc</p>
+  </li>
+</ol>
+
+<h2 id="cancel">CANCEL:</h2>
+
+<ol>
+  <li>
+    <p>run:  sudo vi ./.bashrc</p>
+  </li>
+  <li>
+    <p>set:  unalias s_yes</p>
+
+    <pre><code>     unalias s_banner
+
+     ...............
+</code></pre>
+  </li>
+  <li>
+    <p>run:   source ~/.bashrc</p>
+  </li>
+</ol>
 
   </article>
 

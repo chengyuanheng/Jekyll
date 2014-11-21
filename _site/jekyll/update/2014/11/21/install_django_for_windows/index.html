@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome to Jekyll!</title>
+    <title>install django for windows</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The quick brown fox jumps over a lazy dog">
-    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/05/25/welcome-to-jekyll/">
+    <link rel="canonical" href="http://alixedi.github.io/jekyll/update/2014/11/21/install_django_for_windows/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -56,24 +56,38 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>Welcome to Jekyll!</h1>
+    <h1>install django for windows</h1>
   </header>
 
-  <p class="meta">May 25, 2014</p>
+  <p class="meta">Nov 21, 2014</p>
 
   <article class="post-content">
-  <p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+  <ul>
+  <li>
+    <p>download  python from  https://www.python.org/downloads/windows/</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+    <p>download  django from  https://www.djangoproject.com/download/</p>
+  </li>
+  <li>
+    <p>install python and configuration environment variable for example: add ‘G:\python’ to ‘计算机-&gt;属性-&gt;高级-&gt;环境变量’</p>
+  </li>
+  <li>
+    <p>unzip Django to the directory of python</p>
+  </li>
+  <li>
+    <p>come into the directory of python use dos, run “python setup.py install”, django will be installed into the
+directory of  “lib/site-packages/”</p>
+  </li>
+  <li>
+    <p>add ‘G:\python\lib\site-packages\django’ into environment variable</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
+    <p>add ‘G:\python\Scripts’ into environment variable</p>
+  </li>
+  <li>
+    <p>check whether success : in the directory of G:\python in dos, run ‘python’, run ‘import django’,
+run ‘ django.get_version()’,you will get the version of python and django</p>
+  </li>
+</ul>
 
 
   </article>

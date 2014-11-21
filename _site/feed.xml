@@ -1,30 +1,2779 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Typewriter</title>
-    <description>So I was feeling nostalgic.</description>
+    <title>Uncopyrighted</title>
+    <description>The quick brown fox jumps over a lazy dog</description>
     <link>http://alixedi.github.io/</link>
     <atom:link href="http://alixedi.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+        <title>what do rake spec do</title>
+        <description>&lt;p&gt;when run rake spec –trace, you can see something like this:&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spec&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:prepare&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abort_if_pending_migrations&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;environment&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Execute&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;environment&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Execute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abort_if_pending_migrations&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Execute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:prepare&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:load&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:purge&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;environment&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Execute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:purge&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Execute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:load&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Invoke&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;environment&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Execute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;load&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Execute&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spec&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Don’t run the specs if there are pending migrations in the development database. (db:abort_if_pending_migrations)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Drop the test database (db:test:purge)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Load the schema into the test database (db:schema:load in environment “test”)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 21 Nov 2014 20:20:04 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/what_do_rake_spec_do/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/what_do_rake_spec_do/</guid>
+      </item>
+    
+      <item>
+        <title>win7下给手机建立共享网络</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;以管理员身份运行cmd（只要保证有权限即可，不知道cmd是什么的童鞋，请直接跳到第五步。）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在cmd中输入下面的命令：netsh wlan set hostednetwork mode=allow ssid=cc  key=123456 （其中ssid为建立的网络名称 key为密码）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;打开网络共享中心 更改适配器 有一个“无线网络连接2”的网络连接，这是win7自带的虚拟WIFI网卡 我们要做的就是把正在连接着的网络共享给“无线网络连接2” 方法就是右键共享之类的了，图就不上了，表在心里骂作者好不啦。。。。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在cmd中输入：netsh wlan start hostednetwork  这句话是要启动承载网络，然后你的手机就可以搜到这个名叫cc的网络了，输入密码就可以连接上网了。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如果没有成功，请各位再去找其他的教程吧。毕竟电脑与电脑不一样，手机与手机也不一样额。博主的手机小米2s是可以了，博主很高兴。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 21 Nov 2014 20:17:50 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/create_network_for_phone_in_windows/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/create_network_for_phone_in_windows/</guid>
+      </item>
+    
+      <item>
+        <title> how to generate a task in ruby on rails</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;ruby on rails 生成task的方法：&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;task_namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;task_name1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;task_name2&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task_namespace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rake&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;task文件里面：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:task_namespace&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;this is describe&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:task_name1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;this is also describe&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:task_name2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:environment&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用 rake -T 查看所有task&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rake&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;task_namespace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task_name1&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# this is describe&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;rake&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;task_namespace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task_name2&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# this is also describe&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 21 Nov 2014 20:15:31 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/gengerate-task-in-ruby-on-rails/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/gengerate-task-in-ruby-on-rails/</guid>
+      </item>
+    
+      <item>
+        <title>solve the problem about can not find mysqlclient</title>
+        <description>&lt;h3 id=&quot;look-at-the-tip&quot;&gt;look at the tip:&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Installer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;ExtensionBuildError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;ERROR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Failed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;native&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extension&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rubies&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p547&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extconf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;extconf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;warning&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Insecure&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;world&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;writable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gems&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mode&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;042777&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql_query&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lmysqlclient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yes&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql_query&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lmysqlclient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yes&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql_query&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lmysqlclient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsocket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql_query&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lmysqlclient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lnsl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yes&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql_query&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lmysqlclient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lmygcc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;checking&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql_query&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lmysqlclient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;***&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extconf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;failed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;***&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Could&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Makefile&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;due&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reason&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;probably&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lack&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;necessary&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;libraries&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;Check&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mkmf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;details&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;may&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;need&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;configuration&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Provided&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;configuration&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prog&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prog&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;srcdir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=.&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;curdir&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rubies&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p547&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socketlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;socketlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsllib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nsllib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mygcclib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mygcclib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysqlclientlib&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;remain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;installed&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p547&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inspection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Results&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;logged&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p547&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql_api&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gem_make&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;solve-the-problem&quot;&gt;solve the problem&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uninstall&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;libmysqlclient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dev&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 </description>
-        <pubDate>Sun, 25 May 2014 07:52:38 +0800</pubDate>
-        <link>http://alixedi.github.io/jekyll/update/2014/05/25/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/05/25/welcome-to-jekyll/</guid>
+        <pubDate>Fri, 21 Nov 2014 20:09:02 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/lost-mysqlclient/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/lost-mysqlclient/</guid>
+      </item>
+    
+      <item>
+        <title> google and facebook dns list 编辑 </title>
+        <description>&lt;h2 id=&quot;google-dns-list&quot;&gt;#google dns list&lt;/h2&gt;
+
+&lt;p&gt;74.125.21.98    0.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    0.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    1.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    1.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    10.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    10.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    11.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    11.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    12.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    12.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    13.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    13.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    14.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    14.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    15.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    15.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    16.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    16.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    2.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    2.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    3.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    3.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    4.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    4.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    5.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    5.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    6.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    6.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    7.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    7.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    8.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    8.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    9.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    9.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    admin.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    answers.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    appengine.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    apps.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    appspot.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks0.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks1.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks10.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks2.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks3.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks4.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks5.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks6.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks7.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks8.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    bks9.books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    blogsearch.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    books.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    browserchannel-docs.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    browserchannel-spreadsheets.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    browsersync.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    browsersync.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    buzz.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cache.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cache.pack.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    calendar.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cbk0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cbk1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cbk2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cbk3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cbks0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cbks1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cbks2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cbks3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    chart.apis.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    chrome.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    cloud.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    code.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    code.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    csi.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    desktop.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    desktop.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    desktop2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    developers.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ditu.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    dl.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    dl.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    dl-ssl.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs4.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs5.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs6.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs7.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs8.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    docs9.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive4.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive5.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive6.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive7.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive8.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    drive9.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    earth.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    encrypted.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    encrypted-tbn.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    encrypted-tbn0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    encrypted-tbn1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    encrypted-tbn2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    encrypted-tbn3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    feedburner.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    feedproxy.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    finance.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    fusion.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    geoauth.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    gg.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ghs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ghs.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ghs46.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ghs46.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    googleapis.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    googleapis-ajax.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    googleapis-ajax.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    googlecode.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    google-public-dns-a.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    google-public-dns-b.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    goto.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    groups.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    groups.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    groups-beta.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    gxc.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    id.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    id.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    images.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    images.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    investor.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    jmt0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    kh.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    kh.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khm.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khm.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khm0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khm1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khm2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khm3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khmdb.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khms.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khms.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khms0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khms1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khms2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    khms3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    labs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    large-uploads.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    lh2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    lh2.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    lh3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    lh4.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    lh5.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    lh6.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    linkhelp.clients.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    local.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    m.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    map.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    maps.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    maps.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    maps-api-ssl.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mars.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mobile.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mobile-gtalk.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mobilemaps.clients.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mtalk.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mts.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mts.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mts0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mts1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mts2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mts3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    music.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    music-streaming.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mw1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mw2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    news.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    news.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    pack.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    photos.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    photos-ugc.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    picasa.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    picasaweb.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    picasaweb.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    places.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    play.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    productforums.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    profiles.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    reader.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    safebrowsing.cache.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    safebrowsing.clients.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    safebrowsing.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    safebrowsing-cache.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    sb.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    sb.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    sb-ssl.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    sb-ssl.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    scholar.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    scholar.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    script.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    services.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    sites.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    sketchup.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    sketchup.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheet.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets4.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets5.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets6.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets7.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets8.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets9.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    spreadsheets-china.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    suggestqueries.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    suggestqueries.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    support.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    tbn0.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    tbn1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    tbn2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    tbn3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    toolbar.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    toolbarqueries.clients.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    toolbarqueries.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    toolbarqueries.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    tools.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    tools.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    translate.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    trends.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    upload.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    upload.drive.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    uploads.code.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    uploadsj.clients.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    v3.cache1.c.docs.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    video.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    video-stats.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    voice.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    wallet.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    wire.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    writely.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    writely.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    writely-china.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    writely-com.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www2.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www3.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www4.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ytstatic.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    keep.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    0.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    1.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    2.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    3.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    4.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    5.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    6.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    7.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    8.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    9.client-channel.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    android.clients.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    accounts.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    checkout.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    sandbox.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    wifi.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    wifi.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients1.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients2.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients3.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients4.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients5.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients7.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.115    checkout.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.84    accounts.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    m.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.51    adwords.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    talk.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    domains.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    gmail.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    plus.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    plus.url.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    plusone.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mail.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.25.189    filetransferenabled.mail.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.25.189    chatenabled.mail.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    apis.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients6.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    talkgadget.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    0-open-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    0-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    1-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    1-open-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    1-ps.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    2-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    2-open-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    2-ps.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    3-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    3-ps.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    3hdrrlnlknhi77nrmsjnjr152ueo3soc-a-calendar-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    3-open-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    4-ps.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    4fjvqid3r3oq66t548clrdj52df15coc-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    blogger.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    clients1.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    clients2.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    clients3.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    clients4.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    clients5.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    clients6.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    clients7.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    code-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    debh8vg7vd93bco3prdajidmm7dhql3f-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    doc-00-7o-docs.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    doc-08-7o-docs.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    doc-0c-7o-docs.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    doc-0g-7o-docs.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    doc-0s-7o-docs.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    doc-10-7o-docs.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    doc-14-7o-docs.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    feedback.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    googlehosted.l.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    gp0.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    gp1.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    gp2.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    gp3.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    gp4.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    gp5.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    gp6.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images1-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images2-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images3-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images4-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images5-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images6-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images7-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images8-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images9-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images-docs-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    images-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    k6v18tjr24doa89b55o3na41kn4v73eb-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh1.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh2.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh3.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh4.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh5.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh6.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    mail-attachment.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    music.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    music-onebox.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    oauth.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ob7f2qc0i50kbjnc81vkhgmb5hsv7a8l-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ode25pfjgmvpquh3b1oqo31ti5ibg5fr-a-calendar.opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    rbjhe237k979f79d87gmenp3gejfonu9-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    s1.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    s2.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    s3.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    s4.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    s5.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    s6.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    spreadsheets-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    static.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    t.doc-0-0-sj.sj.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    themes.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    translate.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    webcache.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-calendar-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-fc-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-focus-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-gm-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-kix-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-open-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-opensocial-sandbox.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-oz-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-hangouts-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    www-onepick-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    books.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ci0.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ci1.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ci2.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ci3.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ci4.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ci5.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    ci6.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    doc-0g-9c-docs.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    storage-ugc.l.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    9gbg8d94v5ctadt6ar5f0cgi03hatscu-a-hangout-opensocial.googleusercontent.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh1.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh2.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh3.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh4.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh5.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    lh6.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    nt0.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    nt1.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    nt2.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    nt3.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    nt4.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.22.133    nt5.ggpht.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    csi.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    g0.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    g1.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    g2.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    g3.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    maps.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    mt0.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    mt1.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    mt2.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    mt3.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    mt4.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    mt5.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    mt6.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    mt7.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    ssl.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    t0.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    t1.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    t2.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    t3.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    www.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.120    fonts.gstatic.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    ajax.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    chart.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    fonts.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    maps.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    mt0.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    mt1.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    mt2.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    mt3.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    redirector-bigcache.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    translate.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    www.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    content.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    commondatastorage.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.202.95    storage.googleapis.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    chrometophone.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    evolutionofweb.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    googcloudlabs.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    gv-gadget.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    moderator.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    newsfeed-dot-latest-dot-rovio-ad-engine.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    productideas.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    project-slingshot-gp.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    r2303.latest.project-slingshot-hr.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    r3085-dot-latest-dot-project-slingshot-gp.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    r3091-dot-latest-dot-project-slingshot-gp.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    r3101-dot-latest-dot-project-slingshot-gp.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    r3269-dot-latest-dot-project-slingshot-gp.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    r3432-dot-latest-dot-project-slingshot-hr.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    r4681-dot-latest-dot-project-slingshot-hr.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    r7647-dot-latest-dot-project-slingshot-hr.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    wcproxyx.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    balsamiqgdrive.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    www.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    codereview.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.141    google-developers.appspot.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.82    autoproxy-gfwlist.googlecode.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.82    chromium.googlecode.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.82    closure-library.googlecode.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.82    earth-api-samples.googlecode.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.82    gmaps-samples-flash.googlecode.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.82    google-code-feed-gadget.googlecode.com&lt;/p&gt;
+
+&lt;p&gt;74.125.26.82    smarthosts.googlecode.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    blogsearch.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ditu.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    gg.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    id.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    maps.gstatic.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    m.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt0.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt1.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt2.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    mt3.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    news.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    scholar.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    translate.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.google.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.gstatic.cn&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    clients1.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    accounts.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    blogsearch.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    books.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    desktop.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    encrypted.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    groups.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    gxc.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    id.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    images.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    m.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    maps.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    news.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    picasaweb.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    plus.url.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    scholar.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    toolbar.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    toolbarqueries.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    translate.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    translate.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    wenda.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.google.com.hk&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    accounts.youtube.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    apiblog.youtube.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    help.youtube.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    insight.youtube.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    m.youtube.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ytimg.l.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.youtube.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    i.ytimg.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    i1.ytimg.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    i2.ytimg.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    i3.ytimg.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    i4.ytimg.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    s.ytimg.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    android.googlesource.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    gerrit.googlesource.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    auth.keyhole.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    chrome.angrybirds.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    developer.android.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    domains.googlesyndication.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    earthengine.googlelabs.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    feeds.feedburner.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    g.co&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    goo.gl&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    golang.org&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    blog.golang.org&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    listen.googlelabs.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    m.googlemail.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    market.android.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    ngrams.googlelabs.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.googleadservices.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.googlelabs.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.googlesource.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.orkut.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.blogger.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    accounts.blogger.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.panoramio.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    panoramio.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    static.panoramio.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    tpc.googlesyndication.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    uberproxy.corp.google.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    developer.chrome.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.97    ssl.google-analytics.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.google-analytics.com&lt;/p&gt;
+
+&lt;p&gt;74.125.21.98    www.gmail.com&lt;/p&gt;
+
+&lt;h2 id=&quot;facebook-dns-list&quot;&gt;#facebook dns list&lt;/h2&gt;
+
+&lt;p&gt;173.252.120.6 facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 www.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 login.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 register.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 en-gb.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 es-la.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 pt-br.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 fr-fr.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 de-de.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 it-it.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 ar-ar.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 hi-in.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 zh-cn.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 developer.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 developers.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 apps.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 www-college.facebook.com&lt;/p&gt;
+
+&lt;p&gt;60.254.143.91 creative.ak.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 new.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 tr-tr.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 es-es.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 el-gr.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 sv-se.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 da-dk.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 zh-hk.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 zh-tw.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 fi-fi.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 hs.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 id-id.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 ru-ru.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 hr-hr.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 m.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 nl-nl.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 nb-no.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 ja-jp.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 ko-kr.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 ms-my.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 sl-si.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 connect.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 cs-cz.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 pl-pl.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 secure.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 iphone.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 blog.facebook.com&lt;/p&gt;
+
+&lt;p&gt;23.53.148.125 s-static.ak.facebook.com&lt;/p&gt;
+
+&lt;p&gt;66.220.158.19 upload.facebook.com&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 21 Nov 2014 20:03:47 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/google_and_facebook_dns/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/google_and_facebook_dns/</guid>
+      </item>
+    
+      <item>
+        <title> linux change source</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Change source before bundle :&lt;/p&gt;
+
+    &lt;p&gt;gem source -r http://rubygems.org/     #remove source: http://rubygems.org/&lt;/p&gt;
+
+    &lt;p&gt;gem source -a http://ruby.taobao.org  #add source: http://ruby.taobao.org&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Other sources for linux  :&lt;/p&gt;
+
+    &lt;p&gt;target file:  /etc/apt/sources.list&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;sources list:&lt;/p&gt;
+
+    &lt;p&gt;Ubuntu 官方更新服务器（欧洲，此为官方源，国内较慢，但无同步延迟问题，电信、移动/铁通、联通等公网用户可以使用)：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse
+
+  deb http://archive.ubuntu.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://archive.ubuntu.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://archive.ubuntu.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://archive.ubuntu.com/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://archive.ubuntu.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://archive.ubuntu.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://archive.ubuntu.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://archive.ubuntu.com/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;Ubuntu官方提供的其他软件（第三方闭源软件等）：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://archive.canonical.com/ubuntu/ raring partner
+
+  deb http://extras.ubuntu.com/ubuntu/ raring main
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;骨头兄亲自搭建并维护的 Ubuntu 源（该源位于浙江杭州百兆共享宽带的电信机房)，包含 Deepin 等镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://ubuntu.srt.cn/ubuntu/ raring main restricted universe multiverse
+
+  deb http://ubuntu.srt.cn/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://ubuntu.srt.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://ubuntu.srt.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://ubuntu.srt.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://ubuntu.srt.cn/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://ubuntu.srt.cn/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://ubuntu.srt.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://ubuntu.srt.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://ubuntu.srt.cn/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;网易163更新服务器（广东广州电信/联通千兆双线接入），包含其他开源镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://mirrors.163.com/ubuntu/ raring main restricted universe multiverse
+
+  deb http://mirrors.163.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://mirrors.163.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://mirrors.163.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://mirrors.163.com/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://mirrors.163.com/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://mirrors.163.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://mirrors.163.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://mirrors.163.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://mirrors.163.com/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;搜狐更新服务器（山东联通千兆接入，官方中国大陆地区镜像跳转至此） ，包含其他开源镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://mirrors.sohu.com/ubuntu/ raring main restricted universe multiverse
+
+  deb http://mirrors.sohu.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://mirrors.sohu.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://mirrors.sohu.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://mirrors.sohu.com/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://mirrors.sohu.com/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://mirrors.sohu.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://mirrors.sohu.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://mirrors.sohu.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://mirrors.sohu.com/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;阿里云更新服务器（北京万网/浙江杭州阿里云服务器双线接入），包含其他开源镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://mirrors.aliyun.com/ubuntu/ raring main restricted universe multiverse
+
+  deb http://mirrors.aliyun.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://mirrors.aliyun.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://mirrors.aliyun.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://mirrors.aliyun.com/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://mirrors.aliyun.com/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://mirrors.aliyun.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://mirrors.aliyun.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://mirrors.aliyun.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://mirrors.aliyun.com/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;开源中国更新服务器（浙江杭州阿里云服务器），包含其他开源镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://mirrors.oschina.net/ubuntu/ raring main restricted universe multiverse
+
+  deb http://mirrors.oschina.net/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://mirrors.oschina.net/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://mirrors.oschina.net/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://mirrors.oschina.net/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://mirrors.oschina.net/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://mirrors.oschina.net/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://mirrors.oschina.net/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://mirrors.oschina.net/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://mirrors.oschina.net/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;中国开源软件中心更新服务器（北京光环新网服务器），包含其他开源镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://mirrors.oss.org.cn/ubuntu/ raring main restricted universe multiverse
+
+  deb http://mirrors.oss.org.cn/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://mirrors.oss.org.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://mirrors.oss.org.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://mirrors.oss.org.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://mirrors.oss.org.cn/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://mirrors.oss.org.cn/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://mirrors.oss.org.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://mirrors.oss.org.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://mirrors.oss.org.cn/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;LupaWorld 更新服务器（浙江杭州电信/联通双线服务器），包含其他开源镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://mirror.lupaworld.com/ubuntu raring main restricted universe multiverse
+
+  deb http://mirror.lupaworld.com/ubuntu raring-security main restricted universe multiverse
+
+  deb http://mirror.lupaworld.com/ubuntu raring-updates main restricted universe multiverse
+
+  deb http://mirror.lupaworld.com/ubuntu raring-backports main restricted universe multiverse
+
+  deb http://mirror.lupaworld.com/ubuntu raring-proposed main restricted universe multiverse
+
+  deb-src http://mirror.lupaworld.com/ubuntu raring main restricted universe multiverse
+
+  deb-src http://mirror.lupaworld.com/ubuntu raring-security main restricted universe multiverse
+
+  deb-src http://mirror.lupaworld.com/ubuntu raring-updates main restricted universe multiverse
+
+  deb-src http://mirror.lupaworld.com/ubuntu raring-backports main restricted universe multiverse
+
+  deb-src http://mirror.lupaworld.com/ubuntu raring-proposed main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;Linux运维派架设的更新服务器（北京阿里巴巴科技有限公司服务器），包含其他开源镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://mirrors.skyshe.com/ubuntu/ raring main restricted universe multiverse
+
+  deb http://mirrors.skyshe.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://mirrors.skyshe.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://mirrors.skyshe.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://mirrors.skyshe.com/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://mirrors.skyshe.com/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://mirrors.skyshe.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://mirrors.skyshe.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://mirrors.skyshe.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://mirrors.skyshe.com/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;北京首都在线科技股份有限公司 更新服务器，包含其他开源镜像：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://mirrors.yun-idc.com/ubuntu/ raring main restricted universe multiverse
+
+  deb http://mirrors.yun-idc.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb http://mirrors.yun-idc.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb http://mirrors.yun-idc.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb http://mirrors.yun-idc.com/ubuntu/ raring-backports main restricted universe multiverse
+
+  deb-src http://mirrors.yun-idc.com/ubuntu/ raring main restricted universe multiverse
+
+  deb-src http://mirrors.yun-idc.com/ubuntu/ raring-security main restricted universe multiverse
+
+  deb-src http://mirrors.yun-idc.com/ubuntu/ raring-updates main restricted universe multiverse
+
+  deb-src http://mirrors.yun-idc.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+  deb-src http://mirrors.yun-idc.com/ubuntu/ raring-backports main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;常州贝特康姆软件技术有限公司 更新服务器（江苏常州电信服务器），包含其他开源镜像:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  deb http://centos.bitcomm.cn/ubuntu raring main restricted universe multiverse
+
+  deb http://centos.bitcomm.cn/ubuntu raring-security main restricted universe multiverse
+
+  deb http://centos.bitcomm.cn/ubuntu raring-updates main restricted universe multiverse
+
+  deb http://centos.bitcomm.cn/ubuntu raring-backports main restricted universe multiverse
+
+  deb http://centos.bitcomm.cn/ubuntu raring-proposed main restricted universe multiverse
+
+  deb-src http://centos.bitcomm.cn/ubuntu raring main restricted universe multiverse
+
+  deb-src http://centos.bitcomm.cn/ubuntu raring-security main restricted universe multiverse
+
+  deb-src http://centos.bitcomm.cn/ubuntu raring-updates main restricted universe multiverse
+
+  deb-src http://centos.bitcomm.cn/ubuntu raring-backports main restricted universe multiverse
+
+  deb-src http://centos.bitcomm.cn/ubuntu raring-proposed main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以下为有教育网接入的服务器（推荐教育网用户使用，部分非教育网用户也有可观的速度。教育网用户请优先使用IPv6地址。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;中国科学技术大学更新服务器（位于合肥，千兆教育网接入，百兆电信/联通线路智能路由），由中科大 Linux 用户协会和中科大学网络信息中心维护，包含其他开源镜像，Deepin 官方服务器 实际亦指向此处：
+
+    deb http://debian.ustc.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb http://debian.ustc.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://debian.ustc.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://debian.ustc.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://debian.ustc.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://debian.ustc.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://debian.ustc.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://debian.ustc.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://debian.ustc.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://debian.ustc.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+
+IPv6-Only 地址
+
+    deb http://mirrors6.ustc.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb http://mirrors6.ustc.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://mirrors6.ustc.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://mirrors6.ustc.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://mirrors6.ustc.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://mirrors6.ustc.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+
+
+清华大学更新服务器，（教育网核心节点百兆接入，已计划提高到千兆）由清华大学学生网管会维护。包含其他开源镜像：
+
+    deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+
+IPv4-Only 地址
+
+    deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.4.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+
+IPv6-Only 地址
+
+    deb http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://mirrors.6.tuna.tsinghua.edu.cn//ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://mirrors.6.tuna.tsinghua.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+中国地质大学开源镜像站，由中国地质大学 Linux 爱好者维护。包含其他开源镜像， (校外限 IPv6 访问)：
+
+    deb http://cugbteam.org/ubuntu/ raring main restricted universe multiverse
+
+    deb http://cugbteam.org/ubuntu/ raring-security main restricted universe multiverse
+
+    debhttp://cugbteam.org/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://cugbteam.org/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://cugbteam.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://cugbteam.org/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://cugbteam.org/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://cugbteam.org/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://cugbteam.org/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://cugbteam.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+北京交通大学更新服务器（教育网/电信百兆接入），由北京交通大学信息中心赞助，包含其他开源镜像:
+
+    deb http://mirror.bjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb http://mirror.bjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://mirror.bjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://mirror.bjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://mirror.bjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://mirror.bjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+
+IPv6-Only 地址
+
+    deb http://mirror6.bjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb http://mirror6.bjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://mirror6.bjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://mirror6.bjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://mirror6.bjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://mirror6.bjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+北京理工大学更新服务器，包含其他开源镜像：
+
+    deb http://mirror.bit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirror.bit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirror.bit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://mirror.bit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://mirror.bit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirror.bit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirror.bit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirror.bit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirror.bit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirror.bit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+IPv6-Only 地址
+
+    deb http://mirror.bit6.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirror.bit6.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirror.bit6.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://mirror.bit6.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://mirror.bit6.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirror.bit6.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirror.bit6.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirror.bit6.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirror.bit6.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirror.bit6.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+
+天津大学更新服务器，由天津大学信息与网络协会和天津大学自由软件联盟维护，包含其他开源镜像:
+
+    deb http://mirror.tju.edu.cn/ubuntu/ oneiric main restricted universe multiverse
+
+    deb http://mirror.tju.edu.cn/ubuntu/ oneiric-security main restricted universe multiverse
+
+    deb http://mirror.tju.edu.cn/ubuntu/ oneiric-updates main restricted universe multiverse
+
+    deb http://mirror.tju.edu.cn/ubuntu/ oneiric-backports main restricted universe multiverse
+
+    deb http://mirror.tju.edu.cn/ubuntu/ oneiric-proposed main restricted universe multiverse
+
+    deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric main restricted universe multiverse
+
+    deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric-security main restricted universe multiverse
+
+    deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric-updates main restricted universe multiverse
+
+    deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric-backports main restricted universe multiverse
+
+    deb-src http://mirror.tju.edu.cn/ubuntu/ oneiric-proposed main restricted universe multiverse
+
+山东理工大学更新服务器，包含其他开源镜像，限校内访问：
+
+    deb http://mirrors.sdutlinux.org/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirrors.sdutlinux.org/ubuntu/ raring-backports restricted universe multiverse
+
+    deb http://mirrors.sdutlinux.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb http://mirrors.sdutlinux.org/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.sdutlinux.org/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.sdutlinux.org/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.sdutlinux.org/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.sdutlinux.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.sdutlinux.org/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.sdutlinux.org/ubuntu/ raring-updates main restricted universe multiverse
+
+东北大学更新服务器，包含其他开源镜像：
+
+    deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring main multiverse restricted universe
+
+    deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://ftp.neu.edu.cn/mirrors/ubuntu/ raring-updates main multiverse restricted universe
+
+IPv6-Only 地址
+
+    deb http://ftp.neu6.edu.cn/mirrors/ raring main multiverse restricted universe
+
+    deb http://ftp.neu6.edu.cn/mirrors/ raring-backports main multiverse restricted universe
+
+    deb http://ftp.neu6.edu.cn/mirrors/ raring-proposed main multiverse restricted universe
+
+    deb http://ftp.neu6.edu.cn/mirrors/ raring-security main multiverse restricted universe
+
+    deb http://ftp.neu6.edu.cn/mirrors/ raring-updates main multiverse restricted universe
+
+    deb-src http://ftp.neu6.edu.cn/mirrors/ raring main multiverse restricted universe
+
+    deb-src http://ftp.neu6.edu.cn/mirrors/ raring-backports main multiverse restricted universe
+
+    deb-src http://ftp.neu6.edu.cn/mirrors/ raring-proposed main multiverse restricted universe
+
+    deb-src http://ftp.neu6.edu.cn/mirrors/ raring-security main multiverse restricted universe
+
+    deb-src http://ftp.neu6.edu.cn/mirrors/ raring-updates main multiverse restricted universe
+
+哈尔滨工业大学更新服务器，包含其他开源镜像：
+
+    deb http://run.hit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://run.hit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://run.hit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://run.hit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://run.hit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://run.hit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://run.hit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://run.hit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://run.hit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://run.hit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+IPv6-Only地址
+
+    deb http://run6.hit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://run6.hit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://run6.hit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://run6.hit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://run6.hit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://run6.hit.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://run6.hit.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://run6.hit.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://run6.hit.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://run6.hit.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+大连理工大学更新服务器，包含其他开源镜像：
+
+    deb http://mirror.dlut.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirror.dlut.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirror.dlut.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://mirror.dlut.edu.cn/ubuntu/ubuntu raring-backports main restricted universe multiverse
+
+    deb http://mirror.dlut.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirror.dlut.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirror.dlut.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirror.dlut.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirror.dlut.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirror.dlut.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+上海交通大学更新服务器（教育网千兆接入，联通/电信线路情况不详），包含其他开源镜像：
+
+    deb http://ftp.sjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb http://ftp.sjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://ftp.sjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://ftp.sjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://ftp.sjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://ftp.sjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+IPv6-Only 地址
+
+    deb http://ftp6.sjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb http://ftp6.sjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://ftp6.sjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://ftp6.sjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://ftp6.sjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://ftp6.sjtu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+江苏开放大学更新服务器，由江苏开放大学技术中心维护，包含其他开源镜像：
+
+    deb http://mirrors.jstvu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirrors.jstvu.edu.cn/ubuntu/ raring-backports restricted universe multiverse
+
+    deb http://mirrors.jstvu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb http://mirrors.jstvu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.jstvu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.jstvu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+南京师范大学更新服务器，包含其他开源镜像，限校内访问：
+
+    deb http://mirrors.njnu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirrors.njnu.edu.cn/ubuntu/ raring-backports restricted universe multiverse
+
+    deb http://mirrors.njnu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb http://mirrors.njnu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.njnu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.njnu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+浙江大学更新服务器，由浙江大学Linux用户组维护，包含其他开源镜像：
+
+    deb http://mirrors.zjustu.org/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirrors.zjustu.org/ubuntu/ raring-backports restricted universe multiverse
+
+    deb http://mirrors.zjustu.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb http://mirrors.zjustu.org/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.zjustu.org/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.zjustu.org/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.zjustu.org/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.zjustu.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.zjustu.org/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.zjustu.org/ubuntu/ raring-updates main restricted universe multiverse
+
+华中科技大学更新服务器，由华中科技大学网络与计算中心维护，包含其他开源镜像：
+
+    deb http://mirrors.hust.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirrors.hust.edu.cn/ubuntu/ raring-backports restricted universe multiverse
+
+    deb http://mirrors.hust.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb http://mirrors.hust.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.hust.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+华中科大联创团队更新服务器，由华中科技大学启明学院 的联创团队维护，包含其他开源镜像：
+
+    deb http://mirrors.hustunique.com/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirrors.hustunique.com/ubuntu/ raring-backports restricted universe multiverse
+
+    deb http://mirrors.hustunique.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb http://mirrors.hustunique.com/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.hustunique.com/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.hustunique.com/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.hustunique.com/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.hustunique.com/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.hustunique.com/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.hustunique.com/ubuntu/ raring-updates main restricted universe multiverse
+
+厦门大学更新服务器，由厦门大学信息与网络中心维护，包含其他开源镜像：
+
+    deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring main restricted universe multiverse
+
+    deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-backports restricted universe multiverse
+
+    deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-proposed main restricted universe multiverse
+
+    deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-security main restricted universe multiverse
+
+    deb http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring main restricted universe multiverse
+
+    deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-security main restricted universe multiverse
+
+    deb-src http://mirrors.xmu.edu.cn/ubuntu/archive/ raring-updates main restricted universe multiverse
+
+西南林业大学更新服务器，只包括当前稳定版和开发版，不包括 LTS 镜像。由西南林业大学计信学院维护。包括 Debian 镜像：
+
+    deb http://cs3.swfu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb http://cs3.swfu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb http://cs3.swfu.edu.cn/ubuntu/ raring-proposed main multiverse restricted universe
+
+    deb http://cs3.swfu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb http://cs3.swfu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+    deb-src http://cs3.swfu.edu.cn/ubuntu/ raring main multiverse restricted universe
+
+    deb-src http://cs3.swfu.edu.cn/ubuntu/ raring-backports main multiverse restricted universe
+
+    deb-src http://cs3.swfu.edu.cnubuntu/ raring-proposed main multiverse restricted universe
+
+    deb-src http://cs3.swfu.edu.cn/ubuntu/ raring-security main multiverse restricted universe
+
+    deb-src http://cs3.swfu.edu.cn/ubuntu/ raring-updates main multiverse restricted universe
+
+电子科技大学（位于成都）更新服务器，由电子科技大学学生宿舍网络管理委员会维护，仅包含 Ubuntu 镜像：
+
+    deb http://ubuntu.dormforce.net/ubuntu/ raring main restricted universe multiverse
+
+    deb http://ubuntu.dormforce.net/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://ubuntu.dormforce.net/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb http://ubuntu.dormforce.net/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://ubuntu.dormforce.net/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://ubuntu.dormforce.net/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://ubuntu.dormforce.net/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://ubuntu.dormforce.net/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://ubuntu.dormforce.net/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://ubuntu.dormforce.net/ubuntu/ raring-updates main restricted universe multiverse
+
+电子科技大学另一更新服务器，由电子科大凝聚网络安全工作室维护，包含 Ubuntu 和 Raspian镜像，以及 Linux Deepin镜像：
+
+    deb http://ubuntu.cnssuestc.org/ubuntu/ raring main restricted universe multiverse
+
+    deb http://ubuntu.cnssuestc.org/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb http://ubuntu.cnssuestc.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb http://ubuntu.cnssuestc.org/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://ubuntu.cnssuestc.org/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://ubuntu.cnssuestc.org/ubuntu/ raring-updates main restricted universe multiverse
+
+兰州大学更新服务器，由兰州大学开源社区维护，包含其他开源镜像：
+
+    deb http://mirror.lzu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://mirror.lzu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://mirror.lzu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://mirror.lzu.edu.cn/ubuntu/ubuntu raring-backports main restricted universe multiverse
+
+    deb http://mirror.lzu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://mirror.lzu.edu.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://mirror.lzu.edu.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://mirror.lzu.edu.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://mirror.lzu.edu.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://mirror.lzu.edu.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+西安交通大学更新服务器，由西安交通大学众享社维护，包含其他开源镜像：
+
+    deb http://ubuntu.xjtuns.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb http://ubuntu.xjtuns.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb http://ubuntu.xjtuns.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb http://ubuntu.xjtuns.cn/ubuntu/ubuntu raring-backports main restricted universe multiverse
+
+    deb http://ubuntu.xjtuns.cn/ubuntu/ raring-proposed main restricted universe multiverse
+
+    deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring main restricted universe multiverse
+
+    deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring-security main restricted universe multiverse
+
+    deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring-updates main restricted universe multiverse
+
+    deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring-backports main restricted universe multiverse
+
+    deb-src http://ubuntu.xjtuns.cn/ubuntu/ raring-proposed main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以下为大陆地区外的源&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;香港中文大学更新服务器，由香港中文大学资讯科技服务处维护，包含其他开源镜像：
+
+    deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring main restricted universe multiverse
+
+    deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-security main restricted universe multiverse
+
+    deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-updates main restricted universe multiverse
+
+    deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-backports main restricted universe multiverse
+
+    deb http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-proposed main restricted universe multiverse
+
+    deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring main restricted universe multiverse
+
+    deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-security main restricted universe multiverse
+
+    deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-updates main restricted universe multiverse
+
+    deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-backports main restricted universe multiverse
+
+    deb-src http://ftp.cuhk.edu.hk/pub/Linux/ubuntu raring-proposed main restricted universe
+
+香港 01link 更新服务器，由香港联达网络服务有限公司维护：
+
+    deb http://ubuntu.01link.hk raring main restricted universe multiverse
+
+    deb http://ubuntu.01link.hk raring-security main restricted universe multiverse
+
+    deb http://ubuntu.01link.hk raring-updates main restricted universe multiverse
+
+    deb http://ubuntu.01link.hk raring-backports main restricted universe multiverse
+
+    deb http://ubuntu.01link.hk raring-proposed main restricted universe multiverse
+
+    deb-src http://ubuntu.01link.hk raring main restricted universe multiverse
+
+    deb-src http://ubuntu.01link.hk raring-security main restricted universe multiverse
+
+    deb-src http://ubuntu.01link.hk raring-updates main restricted universe multiverse
+
+    deb-src http://ubuntu.01link.hk raring-backports main restricted universe multiverse
+
+    deb-src http://ubuntu.01link.hk raring-proposed main restricted universe
+
+香港 uhost 更新服务器，由香港互联科技有限公司维护：
+
+    deb http://ubuntu.uhost.hk raring main restricted universe multiverse
+
+    deb http://ubuntu.uhost.hk raring-security main restricted universe multiverse
+
+    deb http://ubuntu.uhost.hk raring-updates main restricted universe multiverse
+
+    deb http://ubuntu.uhost.hk raring-backports main restricted universe multiverse
+
+    deb http://ubuntu.uhost.hk raring-proposed main restricted universe multiverse
+
+    deb-src http://ubuntu.uhost.hk raring main restricted universe multiverse
+
+    deb-src http://ubuntu.uhost.hk raring-security main restricted universe multiverse
+
+    deb-src http://ubuntu.uhost.hk raring-updates main restricted universe multiverse
+
+    deb-src http://ubuntu.uhost.hk raring-backports main restricted universe multiverse
+
+    deb-src http://ubuntu.uhost.hk raring-proposed main restricted universe
+
+台湾的官方源。速度有时甚至快于内地的，包含 Debian 等其他镜像：
+
+    deb http://tw.archive.ubuntu.com/ubuntu raring main restricted universe multiverse
+
+    deb http://tw.archive.ubuntu.com/ubuntu raring-security main restricted universe multiverse
+
+    deb http://tw.archive.ubuntu.com/ubuntu raring-updates main restricted universe multiverse
+
+    deb http://tw.archive.ubuntu.com/ubuntu raring-backports main restricted universe multiverse
+
+    deb http://tw.archive.ubuntu.com/ubuntu raring-proposed main restricted universe multiverse
+
+    deb-src http://tw.archive.ubuntu.com/ubuntu raring main restricted universe multiverse
+
+    deb-src http://tw.archive.ubuntu.com/ubuntu raring-security main restricted universe multiverse
+
+    deb-src http://tw.archive.ubuntu.com/ubuntu raring-updates main restricted universe multiverse
+
+    deb-src http://tw.archive.ubuntu.com/ubuntu raring-backports main restricted universe multiverse
+
+    deb-src http://tw.archive.ubuntu.com/ubuntu raring-proposed main restricted universe multiverse
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其他台湾源可以参考正体中文站Wiki&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Nov 2014 19:50:57 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/linux_change_source/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/linux_change_source/</guid>
+      </item>
+    
+      <item>
+        <title>reinstall mysql in linux</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;删除 mysql&lt;/p&gt;
+
+    &lt;p&gt;sudo apt-get autoremove –purge mysql-server-5.0&lt;/p&gt;
+
+    &lt;p&gt;sudo apt-get remove mysql-server&lt;/p&gt;
+
+    &lt;p&gt;sudo apt-get autoremove mysql-server&lt;/p&gt;
+
+    &lt;p&gt;sudo apt-get remove mysql-common //这个很重要&lt;/p&gt;
+
+    &lt;p&gt;上面的其实有一些是多余的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;清理残留数据&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;dpkg -l&lt;/td&gt;
+          &lt;td&gt;grep ^rc&lt;/td&gt;
+          &lt;td&gt;awk ‘{print $2}’&lt;/td&gt;
+          &lt;td&gt;sudo xargs dpkg -P&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;安装 mysql&lt;/p&gt;
+
+    &lt;p&gt;sudo apt-get install mysql-server-5.5&lt;/p&gt;
+
+    &lt;p&gt;sudo apt-get install mysql-client-5.5&lt;/p&gt;
+
+    &lt;p&gt;apt-get –purge uninstall python-mysqldb &amp;amp;&amp;amp; apt-get install python-mysqldb&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一旦安装完成，MySQL 服务器应该自动启动。您可以在终端提示符后运行以下命令来检查 MySQL 服务器是否正在运行：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;sudo netstat -tap&lt;/td&gt;
+          &lt;td&gt;grep mysql&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;p&gt;当您运行该命令时，您可以看到类似下面的行：&lt;/p&gt;
+
+    &lt;p&gt;tcp 0 0 localhost.localdomain:mysql &lt;em&gt;:&lt;/em&gt; LISTEN -&lt;/p&gt;
+
+    &lt;p&gt;如果服务器不能正常运行，您可以通过下列命令启动它：&lt;/p&gt;
+
+    &lt;p&gt;sudo /etc/init.d/mysql restart&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;进入mysql&lt;/p&gt;
+
+    &lt;p&gt;$mysql -uroot -p 管理员密码&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;配置 MySQL 的管理员密码：&lt;/p&gt;
+
+    &lt;p&gt;sudo mysqladmin -u root password newpassword&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 21 Nov 2014 19:46:41 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/reinstall_mysql_in_linux/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/reinstall_mysql_in_linux/</guid>
+      </item>
+    
+      <item>
+        <title>how to set alias and cancel alias in linux ?</title>
+        <description>&lt;h2 id=&quot;set&quot;&gt;SET:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;run:  sudo vi ./.bashrc&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;set:  alias s_yes=’yes’&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;     alias s_banner='banner'
+
+     alias s_ddate='ddate'
+
+     alias s_fortune='fortune'
+
+     alias s_fortune_zh='fortune-zh'
+
+     alias s_cal='cal 9 1752'
+
+     alias s_xev='xev'
+
+     alias s_xeyes='xeyes'
+
+     alias s_cowsay='fortune | cowsay'
+
+     alias s_cowthink='fottune | cowthink'
+
+     alias s_factor='factor 999'
+
+     alias s_g_moo='apt-get moo'
+
+     alias s_b_moo='apt-build moo'
+
+     alias s_sl='sl'
+
+     alias s_logo='linuxlogo'
+
+     alias s_oneko='oneko'
+
+     alias s_who='who is i
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;run:  source ~/.bashrc&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;cancel&quot;&gt;CANCEL:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;run:  sudo vi ./.bashrc&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;set:  unalias s_yes&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;     unalias s_banner
+
+     ...............
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;run:   source ~/.bashrc&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Fri, 21 Nov 2014 19:44:24 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/set_alias/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/set_alias/</guid>
+      </item>
+    
+      <item>
+        <title>Install ChromeDriver in Linux Mint</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install unzip&lt;/p&gt;
+
+    &lt;p&gt;sudo apt-get install unzip&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download last version of ChromeDriver and unzip it&lt;/p&gt;
+
+    &lt;p&gt;wget -N http://chromedriver.storage.googleapis.com/2.9/chromedriver_linux64.zip -P ~/Downloads&lt;/p&gt;
+
+    &lt;p&gt;unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make it executable and move to /usr/local/share&lt;/p&gt;
+
+    &lt;p&gt;chmod +x ~/Downloads/chromedriver&lt;/p&gt;
+
+    &lt;p&gt;sudo mv -f ~/Downloads/chromedriver /usr/local/share/chromedriver&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create symbolic links&lt;/p&gt;
+
+    &lt;p&gt;sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver&lt;/p&gt;
+
+    &lt;p&gt;sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Fri, 21 Nov 2014 19:41:51 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/Install_ChromeDriver_in_Linux_Mint/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/Install_ChromeDriver_in_Linux_Mint/</guid>
+      </item>
+    
+      <item>
+        <title>install django for windows</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;download  python from  https://www.python.org/downloads/windows/&lt;/p&gt;
+
+    &lt;p&gt;download  django from  https://www.djangoproject.com/download/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;install python and configuration environment variable for example: add ‘G:\python’ to ‘计算机-&amp;gt;属性-&amp;gt;高级-&amp;gt;环境变量’&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;unzip Django to the directory of python&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;come into the directory of python use dos, run “python setup.py install”, django will be installed into the
+directory of  “lib/site-packages/”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;add ‘G:\python\lib\site-packages\django’ into environment variable&lt;/p&gt;
+
+    &lt;p&gt;add ‘G:\python\Scripts’ into environment variable&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;check whether success : in the directory of G:\python in dos, run ‘python’, run ‘import django’,
+run ‘ django.get_version()’,you will get the version of python and django&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 21 Nov 2014 19:38:21 +0800</pubDate>
+        <link>http://alixedi.github.io/jekyll/update/2014/11/21/install_django_for_windows/</link>
+        <guid isPermaLink="true">http://alixedi.github.io/jekyll/update/2014/11/21/install_django_for_windows/</guid>
       </item>
     
   </channel>
