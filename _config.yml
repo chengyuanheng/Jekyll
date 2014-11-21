@@ -1,7 +1,7 @@
 # Site settings
 title: "Typewriter"
 description: "So I was feeling nostalgic."
-baseurl: ""
+baseurl: "/Jekyll"
 url: "http://alixedi.github.io"
 
 # Build settings
